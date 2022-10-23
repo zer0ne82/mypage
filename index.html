@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
+             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="01 - 프로필 링크" />
+        <meta property="og:description" content="세이브 로드를 습관화하자!" />
+        <meta property="og:image" content="공유할 이미지" />
+        <title>01 - 프로필 링크</title>
+        <style>
+            /* 글꼴 적용, 스타일 맨 윗단 */
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+            * {
+                font-family: "Pretendard",serif;
+            }
+            body {
+                background-color: #3d3d3d;
+            }
+
+             .profile {
+                /* 프로필 사진 블록 크기 지정// width 가로 height 세로 */
+                width: 100px;
+                height: 100px;
+
+                /* 프로필 사진 백그라운드 정보 설정 */
+                border-radius: 100%;
+                border: 2px solid white;
+
+                /* 이미지 출력 코드// 밑 3줄 복사해서 붙여넣기 */
+                background-image: url(flow.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            /* 폰트 크기 지정 */
+            .main {
+                color: white;
+                font-size: 20px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            .sub {
+                margin-top: 0px;
+                color: white;
+                font-size: 14px;
+            }
+
+            .wrap {
+                 /* 프로필 박스 가운데 정렬1 */
+                width: 300px;
+                margin: 30px auto 0px auto;
+
+                 /* 프로필 박스 내용물 가운데 정렬 */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+                /* style 태그 안에서, .wrap > a 처럼 오른쪽 화살 괄호 >로 표기하면
+                "wrap로 이름붙인 괄호 안의 모든 태그에 적용해 줘" 라는 명령어로 동작.*/
+                .wrap > a {
+                    width: 300px;
+                    height: 50px;
+
+                    background-color: white;
+                    border-radius: 8px; 
+                
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color:#3d3d3d;
+                    text-decoration: none;
+
+                    /* 프로필 박스 내용물 가운데 정렬 */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    /* 박스에 그림자 주기:
+                    앞 두 개 오른쪽 아래로 얼마나 갈 것인가/ 세번째 꼬리의 길이/ 네번째 꼬리의 선명도 */
+                    box-shadow: 3px 3px 5px 0px black;
+                }
+
+                /* wrap에 hover했을 때(마우스 올렸을 때) 어떻게 동작하느냐?*/
+                .wrap > a:hover {
+                    background-color: #f2f2f2;
+                }
+
+
+            
+
+</style>
+    </head>
+    <body>
+        <!-- 우리가 웹페이지에서 볼 수 있는 부분을 세팅하는 곳이죠.
+             우리가 집에서 눈에 볼 수 있는 집 구조들을 설정하는 곳이죠.-->
+        <div class="wrap">    
+            <div class="profile"></div>
+            <h1 class="main">01</h1>
+            <p class="sub">세이브 앤 로드</p>
+            <a target="_blank" href="https://www.youtube.com/watch?v=ed8K3k1g2R4">START</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=fOhZ9h1c3VM&t=5s">LOAD</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=PzNLiwyQcS4">EXIT</a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=pWu3Q1hSOTg">*HIDDEN*</a>
+        </div>
+        </body>
+</html>
